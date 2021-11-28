@@ -1,0 +1,73 @@
+.pricing {
+    position: relative;
+    margin-bottom: 104px;
+
+    & > h2 {
+        margin-bottom: 20px;
+    }
+
+    & > p {
+        margin-bottom: 50px;
+    }
+
+    &__table {
+        display: flex;
+        margin: 0 auto;
+        max-width: 730px;
+        flex-wrap: wrap;
+        border-radius: 16px;
+        gap: 6px;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 362px;
+        flex: 1 1 auto;
+        min-width: 0;
+        padding: 46px 36px 62px 36px;
+        background-color: $card-background-color;
+        box-sizing: border-box;
+        align-items: start;
+        justify-content: space-between;
+
+        .paragraph-2 {
+            margin-top: 20px;
+            margin-bottom: 26px;
+            flex: 1;
+        }
+
+        .paragraph-3 {
+            margin-top: 8px;
+            margin-bottom: 38px;
+            color: $striked-text;
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        width: 100px;
+        transform: scaleX(-100%);
+        right: 0;
+        top: 130px;
+    }
+
+    .benefits {
+        line-height: 27px;
+        padding-left: 1em;
+
+        &__item {
+            margin-bottom: 17px;
+            &::before {
+                content: "\2022";
+                color: $list-point-color;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+}

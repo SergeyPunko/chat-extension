@@ -1,0 +1,32 @@
+.integration {
+    background-image: url("../img/integration.png");
+    background-color: $integration-background-color;
+    border-radius: 20px;
+    color: $light-text;
+    padding: 85px 160px;
+    box-sizing: border-box;
+    position: relative;
+    background-position-x: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 66px;
+
+    &__img {
+        width: 120px;
+        position: absolute;
+        left: 30px;
+        top: 64px;
+    }
+
+    &__info {
+        max-width: 460px;
+
+        h2 {
+            margin-bottom: 28px;
+        }
+
+        p {
+            margin-bottom: 38px;
+        }
+    }
+}

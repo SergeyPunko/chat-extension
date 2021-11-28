@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: 170px;
+    margin-bottom: 110px;
+    column-gap: 40px;
+
+    &__preview-img {
+        flex: 1;
+        min-width: 0;
+    }
+
+    &__preview-text {
+        flex: 1;
+
+        h1 {
+            margin-bottom: 38px;
+        }
+
+        p {
+            margin-bottom: 48px;
+        }
+
+        .cta {
+            margin-bottom: 42px;
+        }
+
+        .logos {
+            margin-top: 7px;
+        }
+    }
+
+    .striked-text {
+        text-decoration: line-through;
+        color: $striked-text;
+        text-decoration-thickness: 2px;
+    }
+
+    .cta {
+        display: flex;
+        gap: 26px;
+
+        .button-secondary {
+            gap: 4px;
+        }
+    }
+
+    .logos {
+        filter: none;
+        width: 100%;
+    }
+}

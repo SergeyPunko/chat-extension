@@ -1,0 +1,73 @@
+@import 'palette';
+
+.button {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    border-radius: 4px;
+    transition: 300ms;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &-primary {
+        background-color: $button-primary-background;
+        border: 1px solid $button-primary-border-color;
+        color: $light-text;
+    }
+
+    &-secondary {
+        border: 1px solid $button-secondary-border-color;
+
+        &.light {
+            color: $light-text;
+            border: 1px solid $light-text;
+        }
+    }
+
+    &.large {
+        height: 80px;
+        line-height: 80px;
+        font-weight: 500;
+        font-size: 24px;
+        padding: 0 80px;
+        letter-spacing: -0.03em;
+    }
+
+    &.small {
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        padding: 0 16px;
+    }
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.link {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        width: 0px;
+        height: 1px;
+        background-color: $main-text;
+        transition: 400ms;
+    }
+
+    &:hover::before {
+        width: 50%;
+    }
+}

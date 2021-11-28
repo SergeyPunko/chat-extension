@@ -1,0 +1,24 @@
+.get-started {
+    background-color: $integration-background-color;
+    border-radius: 20px;
+    color: $light-text;
+    padding: 92px 278px;
+    box-sizing: border-box;
+    position: relative;
+    
+    img {
+        width: 100px;
+        position: absolute;
+        transform: scaleX(-1);
+        top: 55px;
+        right: 100px;
+    }
+
+    button {
+        margin: 0 auto;
+    }
+
+    p {
+        margin: 20px 0 40px;
+    }
+}

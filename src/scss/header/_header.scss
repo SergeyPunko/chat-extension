@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba($color: $main-background-color, $alpha: .8);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+
+
+    &__logo,
+    &__actions {
+        flex: 1;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__navigation {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+
+    &__item {
+        margin: 0 20px;
+    }
+}

@@ -1,0 +1,31 @@
+@import 'fonts';
+@import 'reset';
+@import 'palette';
+@import 'typography';
+@import 'elements';
+
+@import 'header/header';
+@import 'main/main';
+@import 'features/features';
+@import 'install/install';
+@import 'integration/integration';
+@import 'pricing/pricing';
+@import 'feedback/feedback';
+@import 'get-started/get-started';
+@import 'footer/footer';
+
+body,
+html {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    color: $main-text;
+}
+
+body {
+    background-image: url('../img/bg-lines.png');
+    background-position: 0 180px;
+    background-repeat: repeat-y;
+    background-color: $main-background-color;
+}
