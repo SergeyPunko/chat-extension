@@ -29,4 +29,24 @@
             margin-bottom: 38px;
         }
     }
+
+    @media (max-width: 1000px) {
+        padding: 84px 34px;
+
+        &__img {
+            display: none;
+        }
+    }
+
+    @media (max-width: 900px) {
+        padding: 50px 34px 400px;
+        background-image: url("../img/integration-2.png");
+
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+
+    @media (max-width: 500px) {
+        padding: 50px 34px 250px;
+    }
 }

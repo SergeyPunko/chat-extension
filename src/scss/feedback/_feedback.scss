@@ -1,6 +1,6 @@
 .feedback {
     margin-bottom: 104px;
-    
+
     & > p {
         margin-bottom: 74px;
     }
@@ -13,7 +13,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     &__item {
@@ -29,7 +29,7 @@
 
             .feedback__item-img {
                 right: 0;
-                transform: translateX(50%);
+                transform: translateX(30%);
             }
         }
 
@@ -39,7 +39,7 @@
 
             .feedback__item-img {
                 left: 0;
-                transform: translateX(-50%);
+                transform: translateX(-30%);
             }
         }
 
@@ -63,6 +63,21 @@
 
         &-info {
             margin-top: 18px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        &__item {
+            &:nth-child(-n + 2) {
+                padding: 34px 46px 34px 34px;
+            }
+            &:nth-child(n + 3) {
+                padding: 34px 34px 34px 60px;
+            }
+
+            &-img {
+                width: 64px;
+            }
         }
     }
 }

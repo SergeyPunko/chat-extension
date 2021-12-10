@@ -70,4 +70,21 @@
             }
         }
     }
+
+    @media (max-width: 900px) {
+        .arrow {
+            display: none;
+        }
+
+        &__item {
+            padding: 26px 8px 26px 24px;
+            max-width: calc(50% - 3px);
+        }
+
+        .button {
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
 }

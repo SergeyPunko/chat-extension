@@ -27,4 +27,14 @@
             margin-bottom: 18px;
         }
     }
+
+    @media (max-width: 800px) {
+        &__items {
+            flex-direction: column;
+        }
+
+        &__item {
+            padding: 38px 34px;
+        }
+    }
 }

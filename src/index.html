@@ -11,19 +11,32 @@
 </head>
 
 <body>
-    <header class="container header">
-        <div class="header__logo">LOGO</div>
-        <nav class="header__navigation">
-            <ul class="navigation">
-                <li class="navigation__item"><a href="#" class="paragraph-2 link">Features</a></li>
-                <li class="navigation__item"><a href="#" class="paragraph-2 link">How it works</a></li>
-                <li class="navigation__item"><a href="#" class="paragraph-2 link">Pricing</a></li>
-                <li class="navigation__item"><a href="#" class="paragraph-2 link">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header__actions">
-            <a href="#" class="header__actions link"></a>
+    <header class="header">
+        <div class="header__wrap container">
+            <div class="header__logo">LOGO</div>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__item"><a href="#" class="paragraph-2 link">Features</a></li>
+                    <li class="navigation__item"><a href="#" class="paragraph-2 link">How it works</a></li>
+                    <li class="navigation__item"><a href="#" class="paragraph-2 link">Pricing</a></li>
+                    <li class="navigation__item"><a href="#" class="paragraph-2 link">Contact</a></li>
+                    <li class="navigation__item hidden"><a href="#" class="paragraph-2 link">Terms & Conditions</a></li>
+                    <li class="navigation__item hidden"><a href="#" class="paragraph-2 link">Privacy Policy</a></li>
+                </ul>
+            </nav>
             <button class="button button-secondary small">Get Started</button>
+            <img class="header__arrow" src="./img/white-arrow.png" alt="arrow">
+            <button class="header__close">
+                <img src="./img/close.png" alt="close">
+            </button>
+            <button class="header__burger">
+                <img src="./img/burger.png" alt="menu">
+            </button>
+            <ul class="header__social">
+                <li class="header__social-item"><a href="#"><img src="./img/akar-icons_instagram-fill.png" alt="icons_instagram"></a></li>
+                <li class="header__social-item"><a href="#"><img src="./img/brandico_facebook.png" alt="facebook"></a></li>
+                <li class="header__social-item"><a href="#"><img src="./img/akar-icons_linkedin-fill.png" alt="linkedin"></a></li>
+            </ul>
         </div>
     </header>
     <section class="container main">
@@ -32,8 +45,8 @@
             <p class="paragraph-1 semi-bold">Replace you <span class="striked-text">messengers</span> with Chat</p>
             <div class="cta">
                 <button class="button button-primary">Try now</button>
-                <button class="button button-secondary">Watch demo <img src="./img/carbon_play-filled-alt.svg"
-                        alt="play"></button>
+                <!-- <button class="button button-secondary">Watch demo <img src="./img/carbon_play-filled-alt.svg"
+                        alt="play"></button> -->
             </div>
             <div class="paragraph-3 semi-bold">Loved by teams around the world</div>
             <img src="./img/logos.png" alt="logos" class="logos">
@@ -136,24 +149,24 @@
             </div>
             <div class="pricing__item">
                 <ul class="benefits">
-                    <li class="benefits__item">Up to 10 seats</li>
-                    <li class="benefits__item">Ulimited message</li>
-                    <li class="benefits__item">Email + push notifications</li>
-                    <li class="benefits__item">1 task tracker</li>
+                    <li class="benefits__item paragraph-2">Up to 10 seats</li>
+                    <li class="benefits__item paragraph-2">Ulimited message</li>
+                    <li class="benefits__item paragraph-2">Email + push notifications</li>
+                    <li class="benefits__item paragraph-2">1 task tracker</li>
                 </ul>
             </div>
             <div class="pricing__item">
                 <ul class="benefits">
-                    <li class="benefits__item">Unimited seats</li>
-                    <li class="benefits__item">Ulimited message</li>
-                    <li class="benefits__item">Custom notifications</li>
-                    <li class="benefits__item">Unlimited task trackers</li>
-                    <li class="benefits__item">White label (dev from our side)</li>
+                    <li class="benefits__item paragraph-2">Unimited seats</li>
+                    <li class="benefits__item paragraph-2">Ulimited message</li>
+                    <li class="benefits__item paragraph-2">Custom notifications</li>
+                    <li class="benefits__item paragraph-2">Unlimited task trackers</li>
+                    <li class="benefits__item paragraph-2">White label (dev from our side)</li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="container feedback">
+    <!-- <section class="container feedback">
         <h2 class="align-center">Used by companies and freelancers</h2>
         <p class="paragraph-2 align-center">
             How we help our clients simplify their work with live chats.
@@ -212,7 +225,7 @@
                 </div>
             </li>
         </ul>
-    </section>
+    </section> -->
     <section class="container get-started align-center">
         <img src="./img/white-arrow.png" alt="arrow">
         <h2>See if Chat is right for you</h2>

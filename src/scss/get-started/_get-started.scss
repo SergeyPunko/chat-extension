@@ -21,4 +21,15 @@
     p {
         margin: 20px 0 40px;
     }
+
+    @media (max-width: 900px) {
+        padding: 60px;
+        img {
+            display: none;
+        }
+
+        button {
+            padding: 0 40px !important; 
+        }
+    }
 }

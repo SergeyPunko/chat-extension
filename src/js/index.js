@@ -15,3 +15,19 @@ document.querySelectorAll(".step").forEach((step, _, steps) => {
         }
     })
 })
+
+const header = document.querySelector('.header');
+
+document.querySelector(".header__burger").addEventListener("click", ()=> {
+    header.classList.toggle("active");
+    if(header.classList.contains("active")) {
+        document.body.style.overflow = "hidden";
+    }
+})
+
+document.querySelector(".header__close").addEventListener("click", ()=> {
+    header.classList.toggle("active")
+    if(!header.classList.contains("active")) {
+        document.body.style.overflow = "visible";
+    }
+})
